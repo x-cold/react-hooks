@@ -1,0 +1,29 @@
+{
+  "name": "swan",
+  "version": "1.0.0",
+  "description": "A react like framework powered by hooks",
+  "main": "dist/swan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-cold/swan.git"
+  },
+  "author": "x-cold<lxstart@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x-cold/swan/issues"
+  },
+  "homepage": "https://github.com/x-cold/swan#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.4.3",
+    "jest": "^24.7.1",
+    "npm": "^6.9.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-cleanup": "^3.1.1"
+  }
+}
