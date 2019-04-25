@@ -17,6 +17,10 @@
     return _typeof(obj);
   }
 
+  function createElement(fiber) {
+    var element = fiber.type === 'text' ? document.createTextNode('') : document.createElement(fiber.type);
+    return element;
+  }
   function render(vnode, container) {
     if (typeof vnode === 'string') {
       var textNode = document.createTextNode(vnode);
@@ -58,10 +62,15 @@
       }
     }
   }
+  var render$1 = {
+    render: render,
+    createElement: createElement
+  };
 
   var element = h("div", null, "hello", h("span", {
     onClick: function onClick() {}
   }, "world!"));
-  render(element, document.getElementById('container'));
+  render$1(element, document.getElementById('container'));
 
 }));
+//# sourceMappingURL=swan.js.map
